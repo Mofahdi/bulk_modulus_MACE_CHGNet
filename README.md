@@ -12,3 +12,7 @@ the code is tested on the following packages and versions:
 <code>chgnet=0.3.5</code>
 <code>jarvis-tools=2024.4.30</code>
 </br>The code can probably work with different versions of the above packages
+
+## Credit
+* Please consider reading my published work in Google Scholar using this [link](https://scholar.google.com/citations?user=5tkWy4AAAAAJ&hl=en&oi=ao) thank you :)
+* also please let me know if more features are needed to be added and/or improved 
