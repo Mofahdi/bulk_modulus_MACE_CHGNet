@@ -32,6 +32,8 @@ methodology: the method depends on fitting several volumes with their total ener
 **--output_traj_strains**: (False by default) \
 </br>
 **Note:** you have to put both files "*mace_chgnet_classes.py*" and "*bulk_modulus_calc.py*" in the same path since "*bulk_modulus_calc.py*" inherits classes from "*mace_chgnet_classes.py*". The code will output the above files in the same path where you put "*mace_chgnet_classes.py*" and "*bulk_modulus_calc.py*".
+</br>
+**Another Note**: "*mace_chgnet_classes.py*" has other functions for optimization and md runs, but the main class inherited from it is "mace_EOS" starting in line 600 and ending in line 746 for the equation of state. You might observe lots of classes are for mace, and that is because the code was originally designed for mace but now it adopts chgnet as well for comparison purposes.
 
 ## Required Packages
 the code is tested on the following packages and versions:
