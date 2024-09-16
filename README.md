@@ -2,6 +2,24 @@
 code to calculate bulk modulus using machine learning potentials such as MACE and CHGNet</br>
 methodology: the method depends on fitting several volumes with their total energies thorugh BirchMurnaghan fitting
 
+## Usage
+<code>
+  python bulk_modulus_calc.py \
+	--atoms_path='POSCAR' \
+	--calculator='mace' \
+	--dtype='float64' \
+	--device='cpu' \
+	--opt_atoms=True \
+	--output_opt_atoms=True \
+	--force_max=0.01 \
+	--max_strain=0.1 \
+	--num_samples=11 \
+	--output_strains=False \
+	--output_traj_strains=False \
+</code>
+
+## Args Explanation
+
 ## Required Packages
 the code is tested on the following packages and versions:
 <code>torch=2.0.1</code>
