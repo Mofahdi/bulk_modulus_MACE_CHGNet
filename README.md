@@ -19,7 +19,7 @@ methodology: the method depends on fitting several volumes with their total ener
 </code>
 
 ## Args Explanation
-**--atoms_path**: structure path ('./POSCAR' by default)
+**--atoms_path**: structure path ('./POSCAR' by default) \
 **--calculator**: 'mace' or 'chgnet' are supported currently. Case does not matter ('mace' by default) \
 **--dtype**: 'float64' or 'float32' for 'mace' calculator. If you select 'chgnet' calculator, then this command does not matter ('float64' by default) \
 **--device**: 'cpu', 'mp', or 'cuda' for 'mace' calculator. If you select 'chgnet' calculator, then this command does not matter ('cpu' by default) \
