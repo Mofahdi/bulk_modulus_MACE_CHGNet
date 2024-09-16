@@ -19,6 +19,19 @@ methodology: the method depends on fitting several volumes with their total ener
 </code>
 
 ## Args Explanation
+**--atoms_path**: structure path ('./POSCAR' by default)
+**--calculator**: 'mace' or 'chgnet' are supported currently. Case does not matter ('mace' by default) \
+**--dtype**: 'float64' or 'float32' for 'mace' calculator. If you select 'chgnet' calculator, then this command does not matter ('float64' by default) \
+**--device**: 'cpu', 'mp', or 'cuda' for 'mace' calculator. If you select 'chgnet' calculator, then this command does not matter ('cpu' by default) \
+**--opt_atoms**: whether you optimize the input structure (True by default) \
+**--output_opt_atoms**: if you optimize the input structure, you can choose whether you optimize the input structure (True by default) \
+**--force_max**: (0.01 by default) \
+**--max_strain**: (0.1 by default) \
+**--num_samples**: (11 by default) \
+**--output_strains**: (False by default) \
+**--output_traj_strains**: (False by default) \
+</br>
+**Note:** you have to put both files "*mace_chgnet_classes.py*" and "*bulk_modulus_calc.py*" in the same path since "*bulk_modulus_calc.py*" inherits classes from "*mace_chgnet_classes.py*". The code will output the above files in the same path where you put "*mace_chgnet_classes.py*" and "*bulk_modulus_calc.py*".
 
 ## Required Packages
 the code is tested on the following packages and versions:
